@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桃園埤塘野鳥生態圖鑑與調查資料庫</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased">
+
+    <!-- 頂部導覽列 -->
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 font-bold text-xl text-emerald-400">
+                <i data-lucide="feather"></i> 桃園埤塘野鳥資料庫
+            </a>
+            <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1 rounded-full border border-slate-700">AGENTS.md 標準規範建置</span>
+        </div>
+    </header>
+
+    <!-- 主要內容區 -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white">
+                桃園千塘鄉 &bull; 濕地野鳥調查與生態圖鑑
+            </h1>
+            <p class="text-slate-400 text-lg max-w-3xl mx-auto">
+                本網站嚴格遵循 AGENTS.md 模组化規範建立，收錄桃園埤塘濕地（以蘆竹 2-18 號埤塘為核心樣區）之歷史發展、鳥類調查統計數據與鳥類圖鑑。
+            </p>
+        </section>
+
+        <!-- 數據亮點總覽 -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-slate-800/40 border border-slate-700 p-5 rounded-xl text-center">
+                <div class="text-slate-400 text-xs mb-1">記錄鳥種</div>
+                <div class="text-2xl font-black text-emerald-400">29 科 67 種</div>
+            </div>
+            <div class="bg-slate-800/40 border border-slate-700 p-5 rounded-xl text-center">
+                <div class="text-slate-400 text-xs mb-1">冬候鳥單次最高</div>
+                <div class="text-2xl font-black text-white">1,085 隻</div>
+            </div>
+            <div class="bg-slate-800/40 border border-slate-700 p-5 rounded-xl text-center">
+                <div class="text-slate-400 text-xs mb-1">核心調查樣區</div>
+                <div class="text-2xl font-black text-emerald-400">蘆竹 2-18 號埤</div>
+            </div>
+            <div class="bg-slate-800/40 border border-slate-700 p-5 rounded-xl text-center">
+                <div class="text-slate-400 text-xs mb-1">抽水吸引棲地</div>
+                <div class="text-2xl font-black text-white">354 隻小白鷺</div>
+            </div>
+        </div>
+
+        <!-- 卡片目錄 Grid (AGENTS.md 規範的 #catalog-grid) -->
+        <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- 子頁面 1 卡片 -->
+            <a href="pages/migratory-birds.html" class="block p-8 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-emerald-500 hover:bg-slate-800 transition duration-300">
+                <div class="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-5">
+                    <i data-lucide="compass"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-white">冬候鳥調查專題</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    收錄 2001-2003 年蘆竹與大園地區冬候鳥紀錄，包含近千隻鳳頭潛鴨（澤鳧）渡冬數據、斑背潛鴨混群現象，以及池水抽乾形成泥灘時吸引大量鷺科與鷸鴴科鳥類之實測觀察。
+                </p>
+                <span class="inline-flex items-center gap-1 text-sm font-semibold text-emerald-400">
+                    查看專題數據 <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </span>
+            </a>
+
+            <!-- 子頁面 2 卡片 -->
+            <a href="pages/resident-birds.html" class="block p-8 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-emerald-500 hover:bg-slate-800 transition duration-300">
+                <div class="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-5">
+                    <i data-lucide="trees"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 text-white">留鳥圖鑑與棲地工程變遷</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    探討桃園埤塘周邊高莖草區與池邊樹木對留鳥（如小鸊鷉、粉紅鸚嘴、紅鳩）的掩蔽價值，以及 2002 年填土工程後棲地陸化對野鳥族群的衝擊評估。
+                </p>
+                <span class="inline-flex items-center gap-1 text-sm font-semibold text-emerald-400">
+                    查看專題數據 <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </span>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+        桃園埤塘野鳥生態專案 &bull; Hosted on GitHub Pages
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
